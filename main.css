@@ -1,0 +1,33 @@
+body{
+	background: #49C0E8 url(batthern.png);
+	font-family: sans-serif;
+}
+
+.sidebar{
+	float: left;
+	width: 25%;
+	background-color: rgba(255,255,255, 0.3);
+}
+
+nav{
+	padding: 5px;
+}
+
+nav>ul{
+	list-style: none;
+}
+
+.content{
+	float: right;
+	width: 75%;
+	background-color: rgba(0,0,0, 0.2);
+}
+
+.page{
+	padding: 10px;
+}
+
+a{
+	text-decoration: none;
+	color: #0A9C0F;
+}
