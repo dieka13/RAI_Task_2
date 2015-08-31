@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Form 1</title>
+	<title>Form 2 (GRID)</title>
 	
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<style type="text/css">
+		.row{
+			width: 100%;
+			padding: 0;
+			margin: 15px;
+			display: block;
+		}
+		.grid{
+			width: 49%;
+			display: inline-block;
+		}
+	</style>
 </head>
 <body>
 	<div id="wrapper">
@@ -22,22 +34,20 @@
 			<div class="page">
 				<h1>my Form 1</h1>
 				<form action="myResult.php" method="get">
-
-				<table>
-					<tr>
-						<td>Nama</td>
-						<td><input type="text" name="nama"></td>
-					</tr>
-					<tr>
-						<td>Jenis Kelamin</td>
-						<td>
+					<div class="row">
+						<div class="grid">Nama</div>
+						<div class="grid"><input type="text" name="nama"></div>
+					</div>
+					<div class="row">
+						<div class="grid">Jenis Kelamin</div>
+						<div class="grid">
 							<input type="radio" name="jenis_kel" value="laki-laki" checked> Laki-Laki
 							<input type="radio" name="jenis_kel" value="perempuan"> Perempuan
-						</td>
-					</tr>
-					<tr>
-						<td>Kelas</td>
-						<td>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid">Kelas</div>
+						<div class="grid">
 							<select name="kelas">
 								<option value="IF-36-01">IF-36-01</option>
 								<option value="IF-36-02">IF-36-02</option>
@@ -46,27 +56,26 @@
 								<option value="IF-36-05">IF-36-05</option>
 								<option value="IF-36-06">IF-36-06</option>
 							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>Mata Kuliah</td>
-						<td>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid">Mata Kuliah</div>
+						<div class="grid">
 							<input type="checkbox" value="Kalkulus I" name="matkul[]">Kalkulus I<br>
 							<input type="checkbox" value="Fisika" name="matkul[]">Fisika<br>
 							<input type="checkbox" value="Alpro" name="matkul[]">Alpro<br>
-						</td>
-					</tr>
-					<tr>
-						<td>Deskripsi</td>
-						<td><textarea name="deskripsi"></textarea></td>
-					</tr>
-					<tr>
-						<td colspan="2">
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid">Deskripsi</div>
+						<div class="grid"><textarea name="deskripsi"></textarea></div>
+					</div>
+					<div class="row">
+						<div class="grid">
 							<input type="reset" value="Reset">
 							<input type="submit" value="Kirim">
-						</td>
-					</tr>
-				</table>
+						</div>
+					</div>
 				
 				<input type="hidden" name="id" value="1103120057">
 
